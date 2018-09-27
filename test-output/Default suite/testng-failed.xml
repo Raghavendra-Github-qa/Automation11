@@ -6,7 +6,7 @@
       <class name="script.TestDemo">
         <methods>
           <include name="openApp"/>
-          <include name="testB"/>
+          <include name="testA"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.TestDemo -->

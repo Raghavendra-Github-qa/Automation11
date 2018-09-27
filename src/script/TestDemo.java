@@ -1,26 +1,22 @@
 package script;
 
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import generic.BaseTest;
+import generic.Utility;
 	
 	public class TestDemo extends BaseTest{
 		
 		@Test
 		public void testA() {
-			Reporter.log("TestA...",true);
-		}
-		
-		@Test
-		public void testB() {
-			Reporter.log("TestB...",true);
-			Assert.fail();
-		}
-		
-		@Test
-		public void testC() {
-			Reporter.log("TestC...",true);
-		}
-
+			String data = Utility.getXLData(INPUT_PATH, "sheet1", 0, 0);
+			Reporter.log("Data : " +data,true);
+			
+			int r = Utility.getXLRowCount(INPUT_PATH, "sheet1");
+			Reporter.log("Row : " +r,true);
+//			Assert.fail();
+			
+//			String p = Utility.getPhoto(driver, PHOTO_PATH);
+//			Reporter.log("Photo : "+p,true);
+	    }
 	}

@@ -24,6 +24,7 @@ public class Result implements ITestListener,IAutoConst{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		failCount++;
+//		Utility.getPhoto(driver, PHOTO_PATH);
 		
 	}
 
