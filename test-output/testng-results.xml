@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
+    <line>
+      <![CDATA[TestA]]>
+    </line>
+    <line>
+      <![CDATA[testA Status : 1]]>
+    </line>
+    <line>
+      <![CDATA[close App]]>
+    </line>
+    <line>
+      <![CDATA[TestB]]>
+    </line>
+    <line>
+      <![CDATA[testB Status : 1]]>
+    </line>
+    <line>
+      <![CDATA[close App]]>
+    </line>
     <line>
       <![CDATA[Data : UserName]]>
     </line>
@@ -10,13 +28,69 @@
     <line>
       <![CDATA[Test : testA is Passed]]>
     </line>
+    <line>
+      <![CDATA[TestLogin...]]>
+    </line>
+    <line>
+      <![CDATA[Test : TestLogin is Passed]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="21508" started-at="2018-09-27T20:14:17Z" finished-at="2018-09-27T20:14:38Z">
+  <suite name="Suite" duration-ms="43537" started-at="2018-09-28T19:28:46Z" finished-at="2018-09-28T19:29:29Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21508" started-at="2018-09-27T20:14:17Z" finished-at="2018-09-27T20:14:38Z">
+    <test name="Test" duration-ms="43537" started-at="2018-09-28T19:28:46Z" finished-at="2018-09-28T19:29:29Z">
+      <class name="script.DemoA">
+        <test-method status="PASS" signature="testA()[pri:0, instance:script.DemoA@57fffcd7]" name="testA" duration-ms="44" started-at="2018-09-28T19:28:46Z" finished-at="2018-09-28T19:28:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestA]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="testB()[pri:0, instance:script.DemoA@57fffcd7]" name="testB" duration-ms="0" started-at="2018-09-28T19:28:46Z" finished-at="2018-09-28T19:28:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestB]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.DemoA@57fffcd7]" name="closeApp" is-config="true" duration-ms="0" started-at="2018-09-28T19:28:46Z" finished-at="2018-09-28T19:28:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=DemoA.testA()[pri:0, instance:script.DemoA@57fffcd7] output=TestA]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testA Status : 1]]>
+            </line>
+            <line>
+              <![CDATA[close App]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.DemoA@57fffcd7]" name="closeApp" is-config="true" duration-ms="0" started-at="2018-09-28T19:28:46Z" finished-at="2018-09-28T19:28:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=SUCCESS method=DemoA.testB()[pri:0, instance:script.DemoA@57fffcd7] output=TestB]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testB Status : 1]]>
+            </line>
+            <line>
+              <![CDATA[close App]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.DemoA -->
       <class name="script.TestDemo">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@204f30ec]" name="openApp" is-config="true" duration-ms="17953" started-at="2018-09-27T20:14:17Z" finished-at="2018-09-27T20:14:35Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@31ef45e3]" name="openApp" is-config="true" duration-ms="20175" started-at="2018-09-28T19:28:46Z" finished-at="2018-09-28T19:29:06Z">
           <params>
             <param index="0">
               <value>
@@ -25,14 +99,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestDemo@204f30ec]" name="testA" duration-ms="653" started-at="2018-09-27T20:14:35Z" finished-at="2018-09-27T20:14:35Z">
+        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestDemo@31ef45e3]" name="testA" duration-ms="828" started-at="2018-09-28T19:29:06Z" finished-at="2018-09-28T19:29:07Z">
           <reporter-output>
             <line>
               <![CDATA[Data : UserName]]>
@@ -42,11 +116,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestDemo@204f30ec]" name="closeApp" is-config="true" duration-ms="2851" started-at="2018-09-27T20:14:35Z" finished-at="2018-09-27T20:14:38Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestDemo@31ef45e3]" name="closeApp" is-config="true" duration-ms="875" started-at="2018-09-28T19:29:07Z" finished-at="2018-09-28T19:29:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=TestDemo.testA()[pri:0, instance:script.TestDemo@204f30ec] output=Data : UserName]]]>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=TestDemo.testA()[pri:0, instance:script.TestDemo@31ef45e3] output=Data : UserName]]]>
               </value>
             </param>
           </params>
@@ -57,6 +131,45 @@
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.TestDemo -->
+      <class name="script.TestDemo2">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo2@598067a5]" name="openApp" is-config="true" duration-ms="11766" started-at="2018-09-28T19:29:08Z" finished-at="2018-09-28T19:29:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:script.TestDemo2@598067a5]" name="TestLogin" duration-ms="8829" started-at="2018-09-28T19:29:19Z" finished-at="2018-09-28T19:29:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestLogin...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestDemo2@598067a5]" name="closeApp" is-config="true" duration-ms="922" started-at="2018-09-28T19:29:28Z" finished-at="2018-09-28T19:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=TestDemo2.TestLogin()[pri:0, instance:script.TestDemo2@598067a5] output=TestLogin...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test : TestLogin is Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.TestDemo2 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

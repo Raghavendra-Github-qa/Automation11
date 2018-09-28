@@ -1,6 +1,5 @@
 package script;
 
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -16,7 +15,7 @@ public class DemoA {
 	@Test 
 	public void testB() {
 		Reporter.log("TestB",true);
-		Assert.fail();
+//		Assert.fail();
 	}
 	
 	@AfterMethod

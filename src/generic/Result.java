@@ -8,6 +8,7 @@ import org.testng.annotations.Listeners;
 @Listeners(Result.class)
 public class Result implements ITestListener,IAutoConst{
 	public static int passCount=0, failCount=0;
+//	public static String passName="", failName="";
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -18,12 +19,14 @@ public class Result implements ITestListener,IAutoConst{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		passCount++;
+//		passName=result.getName();
 		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		failCount++;
+//		failName=result.getName();
 //		Utility.getPhoto(driver, PHOTO_PATH);
 		
 	}

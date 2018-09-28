@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.TestDemo2" hash-for-method="TestLogin">TestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.TestDemo" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.DemoA" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.DemoA" hash-for-method="testB">testB</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,6 +135,28 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">script.DemoA</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testA">
+                  </a> <!-- testA -->
+                  <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testB">
+                  </a> <!-- testB -->
+                  <span class="method-name">testB</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">script.TestDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,6 +165,21 @@
                   <a name="testA">
                   </a> <!-- testA -->
                   <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.TestDemo2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin">
+                  </a> <!-- TestLogin -->
+                  <span class="method-name">TestLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,10 +195,14 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;ip&quot; value=&quot;localhost&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;script&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;script.DemoA&quot;/&gt;
+      &lt;class name=&quot;script.Demopro&quot;/&gt;
       &lt;class name=&quot;script.TestDemo&quot;/&gt;
+      &lt;class name=&quot;script.TestDemo2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -160,7 +216,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +242,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testA')
-data.setCell(0, 2, 'script.TestDemo')
-data.setCell(0, 3, 653);
+data.setCell(0, 1, 'TestLogin')
+data.setCell(0, 2, 'script.TestDemo2')
+data.setCell(0, 3, 8829);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testA')
+data.setCell(1, 2, 'script.TestDemo')
+data.setCell(1, 3, 828);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testA')
+data.setCell(2, 2, 'script.DemoA')
+data.setCell(2, 3, 44);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testB')
+data.setCell(3, 2, 'script.DemoA')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 653 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -207,10 +275,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">TestLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TestLogin...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">testA</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Data : UserName</span>
                 <span class="reporter-method-output">Row : 1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testA</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TestA</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testB</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TestB</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,18 +314,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">script.DemoA</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testA</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=testA status=SUCCESS method=DemoA.testA()[pri:0, instance:script.DemoA@57fffcd7] ou...)</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testB</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=testB status=SUCCESS method=DemoA.testB()[pri:0, instance:script.DemoA@57fffcd7] ou...)</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">script.TestDemo</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openApp(localhost, firefox)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">openApp(localhost, chrome)</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA</span>
-                <span class="method-start">17953 ms</span>
+                <span class="method-start">20266 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=testA status=SUCCESS method=TestDemo.testA()[pri:0, instance:script.TestDemo@204f30...)</span>
-                <span class="method-start">18610 ms</span>
+                <span class="method-name">closeApp([TestResult name=testA status=SUCCESS method=TestDemo.testA()[pri:0, instance:script.TestDemo@31ef45...)</span>
+                <span class="method-start">21096 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.TestDemo2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(localhost, chrome)</span>
+                <span class="method-start">21971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestLogin</span>
+                <span class="method-start">33737 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=TestLogin status=SUCCESS method=TestDemo2.TestLogin()[pri:0, instance:script.TestDe...)</span>
+                <span class="method-start">42568 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

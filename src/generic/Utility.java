@@ -39,6 +39,8 @@ public class Utility {
 			Workbook w = WorkbookFactory.create(new FileInputStream(path));
 		    w.getSheet(sheet).getRow(1).getCell(0).setCellValue(pass);
 		    w.getSheet(sheet).getRow(1).getCell(1).setCellValue(fail);
+//		    w.getSheet(sheet).getRow(2).getCell(0).setCellValue(pname);
+//		    w.getSheet(sheet).getRow(2).getCell(1).setCellValue(fname);
 		    w.write(new FileOutputStream(path));
 		   }
 		catch(Exception e) {

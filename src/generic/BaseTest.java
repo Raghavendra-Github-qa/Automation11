@@ -38,7 +38,7 @@ public abstract class BaseTest implements IAutoConst{
 			Reporter.log("Test : "+name+" is Failed & Photo is "+path,true);
 		}
 		else {
-			Reporter.log("Test : "+name+" is Passed");
+			Reporter.log("Test : "+name+" is Passed",true);
 		}
 		driver.quit();
 	}
